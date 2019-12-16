@@ -27,12 +27,11 @@ public class Semana extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        lblMensaje = new javax.swing.JLabel();
         btnActivar = new javax.swing.JButton();
+        lblMensaje = new javax.swing.JLabel();
+        lblMensaje1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-
-        lblMensaje.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
 
         btnActivar.setText("Activar");
         btnActivar.addActionListener(new java.awt.event.ActionListener() {
@@ -41,32 +40,43 @@ public class Semana extends javax.swing.JFrame {
             }
         });
 
+        lblMensaje.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        lblMensaje.setText("jLabel1");
+
+        lblMensaje1.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        lblMensaje1.setText("jLabel1");
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+            .addGroup(layout.createSequentialGroup()
                 .addContainerGap(292, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(lblMensaje, javax.swing.GroupLayout.PREFERRED_SIZE, 95, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btnActivar))
-                .addGap(321, 321, 321))
+                    .addComponent(lblMensaje, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnActivar)
+                    .addComponent(lblMensaje1))
+                .addContainerGap(341, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGap(104, 104, 104)
                 .addComponent(btnActivar)
-                .addGap(104, 104, 104)
-                .addComponent(lblMensaje, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(226, Short.MAX_VALUE))
+                .addGap(84, 84, 84)
+                .addComponent(lblMensaje, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(40, 40, 40)
+                .addComponent(lblMensaje1)
+                .addContainerGap(195, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnActivarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnActivarActionPerformed
-lblMensaje.setText("Hola");
+        lblMensaje.setText("Hola...");
+        lblMensaje1.setText("Como te va...");
+
     }//GEN-LAST:event_btnActivarActionPerformed
 
     /**
@@ -107,5 +117,6 @@ lblMensaje.setText("Hola");
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnActivar;
     private javax.swing.JLabel lblMensaje;
+    private javax.swing.JLabel lblMensaje1;
     // End of variables declaration//GEN-END:variables
 }
